@@ -1,0 +1,99 @@
+{
+  "name": "velzon",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^32.0.0",
+    "@ckeditor/ckeditor5-vue": "^2.0.1",
+    "@fullcalendar/bootstrap": "^5.10.1",
+    "@fullcalendar/core": "^5.10.1",
+    "@fullcalendar/daygrid": "^5.10.1",
+    "@fullcalendar/interaction": "^5.10.1",
+    "@fullcalendar/list": "^5.10.1",
+    "@fullcalendar/timegrid": "^5.10.1",
+    "@fullcalendar/vue3": "^5.10.1",
+    "@j-t-mcc/vue3-chartjs": "^1.2.0",
+    "@popperjs/core": "^2.11.2",
+    "@simonwep/pickr": "^1.8.2",
+    "@vue-leaflet/vue-leaflet": "^0.6.1",
+    "@vueform/multiselect": "^2.3.1",
+    "@vueform/slider": "^2.0.8",
+    "@vueform/toggle": "^2.0.1",
+    "@vuelidate/core": "^2.0.0-alpha.34",
+    "@vuelidate/validators": "^2.0.0-alpha.26",
+    "@zhuowenli/vue-feather-icons": "^5.0.2",
+    "aos": "^2.3.4",
+    "apexcharts": "^3.33.0",
+    "axios": "^0.25.0",
+    "bootstrap": "^5.1.3",
+    "bootstrap-vue-3": "^0.1.3",
+    "chart.js": "^3.7.0",
+    "click-outside-vue3": "^4.0.1",
+    "core-js": "^3.6.5",
+    "echarts": "^5.3.0",
+    "feather-icons": "^4.28.0",
+    "firebase": "^9.6.6",
+    "highlight.js": "^11.4.0",
+    "leaflet": "^1.7.1",
+    "lottie-web": "^5.8.1",
+    "maska": "^1.5.0",
+    "moment": "^2.29.1",
+    "node-sass": "6.0.1",
+    "particles.vue3": "^1.40.2",
+    "prismjs": "^1.26.0",
+    "sass-loader": "^10.2.1",
+    "simplebar": "^5.3.6",
+    "simplebar-vue3": "^0.1.5",
+    "sweetalert2": "^11.3.10",
+    "swiper": "^6.8.4",
+    "vue": "3",
+    "vue-draggable-next": "^2.1.1",
+    "vue-easy-lightbox": "^1.3.0",
+    "vue-feather": "^2.0.0",
+    "vue-flatpickr-component": "^9.0.5",
+    "vue-i18n": "^9.2.0-beta.15",
+    "vue-prismjs": "^1.2.0",
+    "vue-router": "4",
+    "vue3-apexcharts": "^1.4.1",
+    "vue3-count-to": "^1.1.2",
+    "vue3-echarts": "^1.0.4",
+    "vue3-google-map": "^0.8.3",
+    "vue3-quill": "^0.2.6",
+    "vuevectormap": "^1.0.8",
+    "vuex": "^4.0.2",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
