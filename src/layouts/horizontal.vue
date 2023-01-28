@@ -1,30 +1,30 @@
 <template>
-    <div>
-        <div id="layout-wrapper">
-            <NavBar />
-            <!-- ========== App Menu ========== -->
-            <div class="app-menu navbar-menu">
-                <!-- LOGO -->
-                <div class="navbar-brand-box">
-                    <!-- Dark Logo-->
-                    <router-link to="/" class="logo logo-dark">
-                        <span class="logo-sm">
-                      <img src="@/assets/images/logo-sm.png" alt="" height="22" />
+<div>
+    <div id="layout-wrapper">
+        <NavBar />
+        <!-- ========== App Menu ========== -->
+        <div class="app-menu navbar-menu">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <!-- Dark Logo-->
+                <router-link to="/" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="@/assets/images/logo-sm.png" alt="" height="22" />
                     </span>
-                        <span class="logo-lg">
-                      <img src="@/assets/images/logo-dark.png" alt="" height="17" />
+                    <span class="logo-lg">
+                        <img src="@/assets/images/logo-dark.png" alt="" height="17" />
                     </span>
-                    </router-link>
-                    <!-- Light Logo-->
-                    <router-link to="/" class="logo logo-light">
-                        <span class="logo-sm">
-                      <img src="@/assets/images/logo-sm.png" alt="" height="22" />
+                </router-link>
+                <!-- Light Logo-->
+                <router-link to="/" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="@/assets/images/logo-sm.png" alt="" height="22" />
                     </span>
-                        <span class="logo-lg">
-                      <img src="@/assets/images/logo-light.png" alt="" height="17" />
+                    <span class="logo-lg">
+                        <img src="@/assets/images/logo-light.png" alt="" height="17" />
                     </span>
-                    </router-link>
-                    <button type="button" class="
+                </router-link>
+                <button type="button" class="
                       btn btn-sm
                       p-0
                       fs-20
@@ -33,39 +33,56 @@
                       btn-vertical-sm-hover
                     " id="vertical-hover">
                     <i class="ri-record-circle-line"></i>
-                  </button>
-                </div>
-                <!-- Left Sidebar End -->
-                <!-- Vertical Overlay-->
-                <div class="vertical-overlay"></div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- Start Page Content here -->
-            <!-- ============================================================== -->
-    
-            <div class="container-fluid">
-                <div class="row">
-                   <div class="alert alert-primary" role="alert">
-                  A simple Primary alert with
-                    <a href="#" class="alert-link"> an example link </a>. Give
-                    it a click if you like.
-                  </div>
-                </div>  
+                </button>
             </div>
 
-            <div class="main-content">
-                <div class="page-content">
-                    <!-- Start Content-->
-                    <div class="container-fluid">
-                        <slot />
-                    </div>
+            <div id="scrollbar">
+                <div class="container-fluid">
+                    <ul class="navbar-nav h-100" id="navbar-nav">
+                        <li class="menu-title">
+                            <span data-key="t-menu"> {{ $t("t-menu") }}</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                                <i class="ri-dashboard-2-line"></i>
+                                <span data-key="t-dashboards"> {{ $t("t-dashboards") }}</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarDashboards">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <router-link to="/dashboard/analytics" class="nav-link custom-abc" data-key="t-analytics">
+                                            {{ $t("t-analytics") }}
+                                        </router-link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                       
+                    </ul>
                 </div>
-                <Footer />
+                <!-- Sidebar -->
             </div>
+
+            <!-- Left Sidebar End -->
+            <!-- Vertical Overlay-->
+            <div class="vertical-overlay"></div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="main-content">
+            <div class="page-content">
+                <!-- Start Content-->
+                <div class="container-fluid">
+                    <slot />
+                </div>
+            </div>
+            <Footer />
         </div>
     </div>
+</div>
 </template>
-
 
 <script>
 import NavBar from "@/components/nav-bar";
